@@ -1,96 +1,173 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
-    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <title>TecnoBlog - Eventos</title>
-
-        <style>
-        
-        body {
-            font-family: "Arial";
-            line-height: 1.5;
-        }
-
-        img {
-            width: 100%;
-            max-width: 600px;
-        }
-
+    <title></title>
+    <style>
+    body {
+    font-family: "Arial";
+    line-height: 1.5;
+         }
+     img {
+        width: 100%;
+         max-width: 600px;
+         }
         a {
-            text-decoration: none;
-        }
-
+         text-decoration: none
+         }
+         #btnidade {
+            width: 100px; /* Define a largura */
+      height: 20px;  /* Define a altura */
+      padding: 1%;  /* Adiciona um preenchimento interno */
+         }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
-        <center>
-    
-    <!-- adição do título a página -->
-    <h1>📰 TecnoBlog 💻</h1>
-    
-        <!-- botões do menu -->
-        <a href="index.html">🏠 Home | </a>
-        <a href="blog_todos.html">📝 Blogs | </a>
-        <a href="eventos.html">🎉 Eventos | </a>
-        <a href="contato.html">📩 Contato</a>
-
-    <hr>
-
-    </center>
-
-    <h2>🎉 Inscrição para Eventos Tecnológicos</h2>
+    <h1>🎉 Inscrição para Eventos Tecnológicos</h1>
     <p>Preencha o formulário abaixo para participar de nossos eventos. Todos os campos são importantes para organização e logística.</p>
-
     <hr>
+    <ul>Informações Pessoais</ul>
+    <form>
+    <label for="Nome Completo">Nome Completo:</label><br>
+    <input type="text" placeholder="Digite seu nome aqui" size=""><br><br>
+    <label for="email">Email:</label><br>
+    <input type="text" placeholder="seu@email.com"><br><br>
+    <label for="telefone">Telefone: </label><br>
+    <input type="text" placeholder="(99) 99999-9999"> <br><br>
+    <label for="idade">Idade: </label><br>
+    <input type="text" id="btnidade">
+    <hr>
+    <p>Endereço</p>
+    <label for="Rua">Rua:</label><br>
+    <input type="text" size=""><br><br>
+    <label for="Cidade">Cidade:</label><br>
+    <input type="text" size=""><br><br>
+    <label for="estado">Estado:</label> <br>
+    <select id="estado" name="estado">
+    <option value="">Selecione</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    </select> <br><br>
+    <label for="CEP">CEP: </label><br>
+    <input type="text" placeholder="00000-000"> <br><br>
+    <hr>
+    <form>
+  <p>Experiência e Conhecimento</p>
 
-    <p>    Informações Pessoais</p>
-            <form>
-        
-        <label> Nome Completo:</label>
-        <br>
-        <input type="name" style="width: 560px; height: 25px;" required>
-        
-        <br>
-        <br>
-        <label> E-mail:</label>
-        <br>
+  <p>Nível de Conhecimento em Tecnologia:</p>
+  <input type="radio" id="iniciante" name="nivel" value="Iniciante">
+  <label for="iniciante">Iniciante</label><br>
 
-        <input type="email" style="width: 560px; height: 25px;" required>
+  <input type="radio" id="intermediario" name="nivel" value="Intermediário">
+  <label for="intermediario">Intermediário</label><br>
 
-                
-        <br>
-        <br>
+  <input type="radio" id="avancado" name="nivel" value="Avançado">
+  <label for="avancado">Avançado</label><br><br>
 
-        <label>Telefone:</label>
-        <br>
+  <p>Áreas de Interesse:</p>
+  <input type="checkbox" id="html" name="interesse" value="HTML">
+  <label for="html">HTML</label><br>
 
-        <input type="tel" style="width: 560px; height: 25px;" required>
+  <input type="checkbox" id="css" name="interesse" value="CSS">
+  <label for="css">CSS</label><br>
 
-        <br>
-        <br>
+  <input type="checkbox" id="javascript" name="interesse" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
 
-        <label>Idade</label>
+  <input type="checkbox" id="python" name="interesse" value="Python">
+  <label for="python">Python</label><br>
+</form>
+<hr>
 
-        <br>
+<p>Detalhes do Evento</p>
+<p>Tipo de Evento:</p>
+<select id="tipoevento" name="tipo evento">
+    <option value="">Selecione</option>
+    </select>
+<br>
+<form>
+    <br>
+  <label for="nascimento">Data:</label>
+  <input type="date" id="data" name="Data" min="1900-01-01" max="2025-12-31">
+  <br><br>
+  
+  <label for="hora">Escolha um horário:</label>
+  <input type="time" id="hora" name="hora">
+  <br><br>
+  <label for="participantes">Número de Participantes:</label><br>
+  <input type="number" id="participantes" name="participantes" value="1" min="1" max="100">
+</form>
+<hr>
+<form>
+  <p>Preferências e Notificações</p>
 
-        <input type="age" style="width: 80px; height: 25px;" required>
-        
+  <p>Formato do Evento:</p>
+  <input type="radio" id="online" name="formato" value="Online">
+  <label for="online">Online</label><br>
 
+  <input type="radio" id="presencial" name="formato" value="Presencial">
+  <label for="presencial">Presencial</label><br><br>
 
-        <br>
-        <br>
+  <label for="horario">Horário Preferido:</label><br>
+  <select id="horario" name="horario">
+    <option value="">Selecione...</option>
+    <option value="manha">Manhã</option>
+    <option value="tarde">Tarde</option>
+    <option value="noite">Noite</option>
+  </select><br><br>
+
+  <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+  <label for="newsletter">Quero receber novidades e newsletters</label>
+</form>
+    <form>
         <hr>
+  <p>Upload de Arquivos</p>
 
-        <p>Endereço</p>
+  <label for="curriculo">Enviar Currículo (PDF):</label><br>
+  <input type="file" id="curriculo" name="curriculo" accept=".pdf"><br><br>
+
+  <label for="portfolio">Portfólio (opcional):</label><br>
+  <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx,.jpg,.png"><br><br>
+        <hr>
+  <p>Observações</p>
+
+  <label for="mensagem">Mensagem:</label><br>
+  <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Escreva qualquer observação ou comentário..."></textarea><br><br>
+
+  <button type="submit">Enviar Inscrição</button>
+</form>
+
+
+
+
+
+    
+</form>
+</body>
+</html>
 
         
 
